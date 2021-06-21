@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bebas Neue', cursive;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Bg.jpg');
+    background-size: cover;
+    position: relative;
+
+    nav {
+        width: 80%;
+        height: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+
+        .logo {
+            text-decoration: none;
+            font-size: 50px;
+            color: #fff;
+            overflow: hidden;
+            background: none;
+        }
+
+        ul {
+            display: flex;
+
+            li {
+                list-style: none;
+                margin-left: 25px;
+                font-size: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    transition: all 0.1s ease;
+                    -webkit-transition: all 0.1s ease;
+                    -moz-transition: all 0.1s ease;
+                    -ms-transition: all 0.1s ease;
+                    -o-transition: all 0.1s ease;
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+    }
+
+    .hero {
+        width: 80%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+        h1 {
+            color: #fff;
+            font-family: 'Lobster', cursive;
+            font-size: 100px;
+        }
+    }
+}
+
+.overlay-texts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: #fff;
+        font-size: 80px;
+        overflow: hidden;
+
+        span {
+            position: relative;
+            top: 120px;
+        }
+    }
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #252525;
+}
